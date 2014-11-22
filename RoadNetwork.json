@@ -13,6 +13,7 @@
 		{"name":"Commonwealth Dr @ Greenbrier Dr","controlType":"stop"},
 		{"name":"Earlysville Rd @ Rio Rd W","controlType":"signal"},
 		{"name":"Hydraulic Rd @ Whitewood Rd","controlType":"signal"},
+		{"name":"Greenbrier Dr @ Whitewood Rd","controlType":"stop"},
 		{"name":"Hydraulic Rd @ Georgetown Rd","controlType":"signal"},
 		{"name":"Barracks Rd @ Georgetown Rd","controlType":"signal"},
 		{"name":"Hydraulic Rd @ Commonwealth Dr","controlType":"signal"},
@@ -28,13 +29,25 @@
 		{"name":"Rio Rd E @ Albemarle Square","controlType":"signal"},
 		{"name":"Rio Rd E @ Old Brook Rd","controlType":"signal"},
 		{"name":"Rio Rd E @ Hillsdale Dr","controlType":"signal"},
+		{"name":"Rio Rd E @ Huntington Rd","controlType":"signal"},
+		{"name":"Rio Rd E @ Greenbrier Dr","controlType":"signal"},
 		{"name":"Rio Rd E @ Meadowcreek Parkway","controlType":"signal"},
+		{"name":"Rio Rd E @ Melbourne Rd","controlType":"signal"},
+		{"name":"Station 8","controlType":"stop"},
+		{"name":"29 @ Carrsbrook Dr","controlType":"stop"},
+		{"name":"Carrsbrook Dr @ Old Brook Rd","controlType":"stop"},
+		{"name":"Carrsbrook Dr @ Hillsdale Dr","controlType":"stop"},
+		{"name":"Carrsbrook Dr @ Huntington Rd","controlType":"stop"},
+		{"name":"Meadowcreek Parkway @ Melbourne Rd","controlType":"stop"},
+		{"name":"Branchlands Blvd @ Hillsdale Dr","controlType":"stop"},
+		{"name":"Hillsdale Dr @ Greenbrier Dr","controlType":"stop"},
 		
 		{"name":"29 @ Berkmar Dr","controlType":"stop"}
 	],
 	"roads":[
 		{"source":"29 @ Hilton Heights Rd", "target":"29 @ Polo Grounds Rd", "speed":45, "distance":2400, "lanes":8, "median":"hard"},
-		{"source":"29 @ Hilton Heights Rd", "target":"29 @ Gander Dr", "speed":45, "distance":2090, "lanes":8, "median":"hard"},
+		{"source":"29 @ Hilton Heights Rd", "target":"29 @ Carrsbrook Dr", "speed":45, "distance":1465, "lanes":8, "median":"hard"},
+		{"source":"29 @ Gander Dr", "target":"29 @ Carrsbrook Dr", "speed":45, "distance":610, "lanes":8, "median":"hard"},
 		{"source":"29 @ Woodbrook Dr", "target":"29 @ Gander Dr", "speed":45, "distance":1650, "lanes":8, "median":"hard"},
 		{"source":"29 @ Woodbrook Dr", "target":"29 @ Albemarle Sq", "speed":45, "distance":1685, "lanes":8, "median":"hard"},
 		{"source":"29 @ Rio Rd W", "target":"29 @ Albemarle Sq", "speed":45, "distance":685, "lanes":8, "median":"hard"},
@@ -55,21 +68,50 @@
 		{"source":"Barracks Rd @ Georgetown Rd", "target":"Hydraulic Rd @ Georgetown Rd", "speed":35, "distance":4525, "lanes":2, "median":"no"},
 		{"source":"Hydraulic Rd @ Commonwealth Dr", "target":"Hydraulic Rd @ Georgetown Rd", "speed":35, "distance":1815, "lanes":4, "median":"no"},
 		{"source":"Hydraulic Rd @ Commonwealth Dr", "target":"Hydraulic Rd @ District Ave", "speed":35, "distance":950, "lanes":4, "median":"no"},
+		{"source":"Hydraulic Rd @ Commonwealth Dr", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":35, "distance":3165, "lanes":2, "median":"soft"},
 		{"source":"29 @ Hydraulic Rd", "target":"Hydraulic Rd @ District Ave", "speed":35, "distance":1185, "lanes":4, "median":"no"},
-		{"source":"Berkmar Dr @ Rio Rd W", "target":"29 @ Berkmar Dr", "speed":35, "distance":2770, "lanes":2, "median":"no"},
+		
+		{"source":"Berkmar Dr @ Rio Rd W", "target":"Station 8", "speed":35, "distance":880, "lanes":2, "median":"no"},
+		{"source":"Station 8", "target":"29 @ Berkmar Dr", "speed":35, "distance":1920, "lanes":2, "median":"no"},
+		
 		{"source":"Berkmar Dr @ Rio Rd W", "target":"Berkmar Dr @ Woodbrook Dr", "speed":35, "distance":2180, "lanes":2, "median":"no"},
 		{"source":"Berkmar Dr @ Hilton Heights Rd", "target":"Berkmar Dr @ Woodbrook Dr", "speed":35, "distance":3660, "lanes":2, "median":"no"},
 		
 		{"source":"29 @ Rio Rd W", "target":"Rio Rd E @ Albemarle Square", "speed":35, "distance":835, "lanes":4, "median":"no"},
 		{"source":"Rio Rd E @ Old Brook Rd", "target":"Rio Rd E @ Albemarle Square", "speed":35, "distance":2400, "lanes":4, "median":"no"},
 		{"source":"Rio Rd E @ Old Brook Rd", "target":"Rio Rd E @ Hillsdale Dr", "speed":35, "distance":210, "lanes":4, "median":"no"},
-		{"source":"Rio Rd E @ Meadowcreek Parkway", "target":"Rio Rd E @ Hillsdale Dr", "speed":35, "distance":5200, "lanes":4, "median":"no"},
 		
-		{"source":"Commonwealth Dr @ Westfield Rd", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":25, "distance":1055, "lanes":3, "median":"no"},
+		{"source":"Rio Rd E @ Huntington Rd", "target":"Rio Rd E @ Hillsdale Dr", "speed":35, "distance":2095, "lanes":4, "median":"soft"},
+		{"source":"Rio Rd E @ Huntington Rd", "target":"Rio Rd E @ Meadowcreek Parkway", "speed":35, "distance":3165, "lanes":4, "median":"soft"},
+
+		{"source":"29 @ Greenbrier Dr", "target":"Hillsdale Dr @ Greenbrier Dr", "speed":25, "distance":1215, "lanes":2, "median":"soft"},
+		{"source":"Branchlands Blvd @ Hillsdale Dr", "target":"Hillsdale Dr @ Greenbrier Dr", "speed":35, "distance":1635, "lanes":2, "median":"soft"},
+		{"source":"Branchlands Blvd @ Hillsdale Dr", "target":"Rio Rd E @ Hillsdale Dr", "speed":35, "distance":3335, "lanes":2, "median":"soft"},
+
+
+
+
+
+
+		{"source":"29 @ Carrsbrook Dr", "target":"Carrsbrook Dr @ Old Brook Rd", "speed":25, "distance":5095, "lanes":2, "median":"no"},
+		{"source":"Carrsbrook Dr @ Hillsdale Dr", "target":"Carrsbrook Dr @ Old Brook Rd", "speed":25, "distance":1055, "lanes":2, "median":"no"},
+		{"source":"Carrsbrook Dr @ Hillsdale Dr", "target":"Carrsbrook Dr @ Huntington Rd", "speed":25, "distance":555, "lanes":2, "median":"no"},
+		{"source":"Rio Rd E @ Old Brook Rd", "target":"Carrsbrook Dr @ Old Brook Rd", "speed":30, "distance":6285, "lanes":2, "median":"no"},
+		{"source":"Rio Rd E @ Hillsdale Dr", "target":"Carrsbrook Dr @ Hillsdale Dr", "speed":30, "distance":6020, "lanes":2, "median":"no"},
+		{"source":"Rio Rd E @ Huntington Rd", "target":"Carrsbrook Dr @ Huntington Rd", "speed":30, "distance":7285, "lanes":2, "median":"no"},
+
+
+
+
+
+
+		{"source":"Commonwealth Dr @ Westfield Rd", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":25, "distance":1055, "lanes":2, "median":"no"},
 		{"source":"Commonwealth Dr @ Westfield Rd", "target":"Four Seasons Dr @ Commonwealth Dr", "speed":25, "distance":1545, "lanes":2, "median":"no"},
 		{"source":"Four Seasons Dr @ Rio Rd W", "target":"Four Seasons Dr @ Commonwealth Dr", "speed":25, "distance":3515, "lanes":2, "median":"no"},
 		
+		{"source":"Greenbrier Dr @ Whitewood Rd", "target":"Hydraulic Rd @ Whitewood Rd", "speed":25, "distance":2370, "lanes":2, "median":"no"},
+		{"source":"Greenbrier Dr @ Whitewood Rd", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":25, "distance":510, "lanes":2, "median":"no"},
 		
-		{"source":"29 @ Greenbrier Dr", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":25, "distance":1725, "lanes":3, "median":"no"}
+		{"source":"29 @ Greenbrier Dr", "target":"Commonwealth Dr @ Greenbrier Dr", "speed":25, "distance":1725, "lanes":2, "median":"soft"}
 	]
 }
